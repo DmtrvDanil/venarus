@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -60,12 +61,34 @@
                         </a>
                     </div>
                 </div>
-                <div class="header__wrapper-slider">
-
+                <div class="header__wrapper-slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/slider.png" alt="Венарус" class="header__slide"></div>
+                    </div>
+                    <div class="swiper-button-next arrow">
+                        <img src="img/icons/arrowNext.svg" alt="Следующий">
+                    </div>
+                    <div class="swiper-button-prev arrow">
+                        <img src="img/icons/arrowPrev.svg" alt="Предыдущий">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            }
+        });
+    </script>
 </body>
 
 </html>
