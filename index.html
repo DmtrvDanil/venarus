@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Roboto:wght@300;400&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
@@ -63,6 +64,7 @@
                 </div>
                 <div class="header__wrapper-slider swiper">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img/slider.png" alt="Венарус" class="header__slide"></div>
                         <div class="swiper-slide"><img src="img/slider.png" alt="Венарус" class="header__slide"></div>
                     </div>
                     <div class="swiper-button-next arrow">
@@ -212,12 +214,148 @@
 
         </div>
     </section>
+    <section class="opinions">
+        <div class="container">
+            <div class="opinions__wrapper">
+                <div class="complex__textContent textContent">
+                    <h2 class="complex__textContent-heading headingH2">
+                        Комплексное действие
+                    </h2>
+                    <p class="complex__textContent-descr descr">
+                        Венарус показан для терапии симптомов хронических заболеваний вен (устранения
+                        и облегчения симптомов).
+                    </p>
+                </div>
+                <div class="swiper opinionsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="video">
+                                <img src="img/video3.png" alt="Видео">
+                                <img src="img/icons/play.svg" class="videoPlay-icon">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video">
+                                <img src="img/video3.png" alt="Видео">
+                                <img src="img/icons/play.svg" class="videoPlay-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination swiper-pagination1"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="container">
+            <div class="info__wrapper">
+                <div class="complex__textContent textContent">
+                    <h2 class="complex__textContent-heading headingH2">
+                        Полезная информация
+                    </h2>
+                    <p class="complex__textContent-descr descr">
+                        ВЕНАРУС —
+                        надежный помощник в лечении варикоза, хранительно женсеих ног на пути к ее мечте!
+                    </p>
+                </div>
+                <div class="info__content">
+                    <div class="info__content-item info__content-item1">
+                        <p class="info__content-item-text">
+                            Профилак-
+                            тические упражнения
+                        </p>
+                    </div>
+                    <div class="info__content-item info__content-item2">
+                        <p class="info__content-item-text">
+                            Диагностика и способы лечения
+                        </p>
+                    </div>
+                    <div class="info__content-item info__content-item3">
+                        <p class="info__content-item-text">
+                            Рекомен-
+                            дации по питанию
+                        </p>
+                    </div>
+                    <div class="info__content-item info__content-item4">
+                        <p class="info__content-item-text">
+                            Факты
+                            о варикозе
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button class="info__btn btn">
+                Подробнее >
+            </button>
+        </div>
+    </section>
+    <section class="where">
+        <div class="container">
+            <div class="where__wrapper">
+                <div class="complex__textContent textContent">
+                    <h2 class="complex__textContent-heading headingH2">
+                        Комплексное действие
+                    </h2>
+                    <p class="complex__textContent-descr descr">
+                        Венарус показан для терапии симптомов хронических заболеваний вен (устранения
+                        и облегчения симптомов).
+                    </p>
+                </div>
+                <div class="where__content">
+                    <div class="where-img">
+                        <img src="img/where.png">
+                    </div>
+                    <div class="where__content-btnGroup">
+                        <button class="where__btn btn">
+                            apteka.ru
+                        </button>
+                        <button class="where__btn btn">
+                            366.ru
+                        </button>
+                        <button class="where__btn btn">
+                            stolichki.ru
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="container">
+                <h2 class="footer__heading">
+                    БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА. НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ
+                </h2>
+                <div class="footer__wrapper">
+                    <div class="footer__item">
+                        <a href="#" class="footer__item-link">
+                            Сообщить о нежелательном явлении
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <a href="#" class="footer__item-link">
+                            Условия пользования сайтом и файлами Cookies
+                        </a>
+                        <a href="#" class="footer__item-link footer-link">
+                            г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж
+                            Телефон: +7 (495) 555-55-55
+                        </a>
+                    </div>
+                    <div class="footer__item">
+                        <div class="footer__item-socialGroup">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         const swiper1 = new Swiper('.swiper', {
             // Optional parameters
             direction: 'horizontal',
-            loop: true,
+            // loop: true,
             // Navigation arrows
             navigation: {
                 nextEl: ".swiper-button-next",
@@ -226,22 +364,31 @@
         });
     </script>
     <script>
-        var swiper = new Swiper(".productionSwiper", {
-          slidesPerView: 2,
-          spaceBetween: 0,
-          slidesPerGroup: 2,
-          loop: false,
-          loopFillGroupWithBlank: true,
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
+        var swiper2 = new Swiper1(".productionSwiper", {
+            slidesPerView: 2,
+            spaceBetween: 0,
+            slidesPerGroup: 2,
+            loop: false,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
         });
-      </script>
+    </script>
+    <script>
+        let swiper3 = new Swiper(".opinionsSwiper", {
+            loop: false,
+            pagination: {
+                el: ".swiper-pagination1",
+                clickable: true,
+            },
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 

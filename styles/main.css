@@ -32,6 +32,20 @@ body {
     color: rgba(119, 119, 119, 1);
     margin-top: 38px;
 }
+.btn {
+    font-size: 18px;
+    background: none;
+    border: 1px solid #47093E;
+    color: #47093E;
+    border-radius: 33px;
+    padding: 20px 78px 25px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+.btn:hover {
+    color: rgba(71, 9, 62, 0.7);
+    border: 1px solid rgba(71, 9, 62, 0.7);
+}
 .header {
     padding: 28px 0 152px;
 }
@@ -265,4 +279,103 @@ body {
 }
 .production .swiper-wrapper {
     align-items: center;
+}
+.opinions {
+    margin-top: 212px;
+}
+.opinions__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.opinions .swiper {
+    padding-bottom: 50px;
+}
+.swiper-pagination1 {
+    width: 50px;
+}
+.swiper-pagination1 .swiper-pagination-bullet {
+    background: none;
+    border: 1px solid #590D56;
+    width: 12px;
+    height: 12px;
+}
+.swiper-pagination1 .swiper-pagination-bullet-active {
+    background: #590D56;
+}
+.info {
+    padding: 217px 0 83px;
+}
+.info__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.info__content-item {
+    padding: 24px 24px 0;
+}
+.info__content {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(7, 5vw);
+    grid-gap: 17px;
+    cursor: pointer;
+}
+.info__content-item1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    background-image: url('../img/info/1.png');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+}
+.info__content-item2 {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-image: url('../img/info/2.png');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+}
+.info__content-item3 {
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    background-image: url('../img/info/3.png');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center center;
+}
+.info__content-item4 {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 5;
+    grid-row-end: 8;
+    background: #47093E;
+}
+.info__content-item-text {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 300;
+}
+.info__btn {
+    float: right;
+    margin-top: 36px;
+}
+.where {
+    margin-top: 96px;
+}
+.where__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.where__content-btnGroup {
+    display: flex;
+    margin-top: 34px;
+}
+.where__btn:not(:last-child) {
+    margin-right: 30px;
 }
