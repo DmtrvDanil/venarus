@@ -71,14 +71,150 @@
                     <div class="swiper-button-prev arrow">
                         <img src="img/icons/arrowPrev.svg" alt="Предыдущий">
                     </div>
+                    <button class="header__btn btn">
+                        Где купить >
+                    </button>
                 </div>
             </div>
         </div>
     </header>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+    <section class="trigger">
+        <div class="trigger__line">
+            получить скидку 10% >>>
+        </div>
+        <div class="container">
+            <div class="trigger__wrapper">
+                <a href="#" class="trigger__item content-action__item">
+                    <img src="img/icons/target.svg" alt="Доказанная  эффективность" class="action__item-icon">
+                    <div class="trigger__item-descr">
+                        <p class="trigger__item-text">
+                            Доказанная эффективность
+                        </p>
+                        <img src="img/icons/extra.svg" alt="Дополнительно" class="extra-icon">
+                    </div>
 
-        const swiper = new Swiper('.swiper', {
+                </a>
+                <a href="#" class="trigger__item content-action__item">
+                    <img src="img/icons/cube.svg" alt="Новая дозировка" class="action__item-icon">
+                    <div class="trigger__item-descr">
+                        <p class="trigger__item-text">
+                            Новая дозировка
+                            100 мг + 900 мг
+                        </p>
+                        <img src="img/icons/extra.svg" alt="Дополнительно" class="extra-icon">
+                    </div>
+                </a>
+                <a href="#" class="trigger__item content-action__item">
+                    <img src="img/icons/num.svg" alt="Удобный прием" class="action__item-icon">
+                    <div class="trigger__item-descr">
+                        <p class="trigger__item-text">
+                            Удобный прием.
+                            Одна таблетка в сутки*
+                        </p>
+                        <img src="img/icons/extra.svg" alt="Дополнительно" class="extra-icon">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="complex">
+        <div class="container">
+            <div class="complex__wrapper">
+                <div class="complex__textContent textContent">
+                    <h2 class="complex__textContent-heading headingH2">
+                        Комплексное действие
+                    </h2>
+                    <p class="complex__textContent-descr descr">
+                        Венарус показан для терапии симптомов хронических заболеваний вен (устранения
+                        и облегчения симптомов).
+                    </p>
+                </div>
+                <div class="complex__content">
+                    <div class="complex__content-item">
+                        <a href="#" class="content-item__link">
+                            Подробнее >
+                        </a>
+                        <img src="img/icons/ball.svg" class="ball ball1">
+                        <p class="content-item__text">
+                            Помогает
+                            предотвратить судороги
+                        </p>
+                    </div>
+                    <div class="complex__content-item">
+                        <a href="#" class="content-item__link">
+                            Подробнее >
+                        </a>
+                        <img src="img/icons/ball.svg" class="ball ball2">
+                        <p class="content-item__text">
+                            Способствует
+                            снижению тяжести
+                            в ногах
+                        </p>
+                    </div>
+                    <div class="complex__content-item">
+                        <a href="#" class="content-item__link">
+                            Подробнее >
+                        </a>
+                        <img src="img/icons/ball.svg" class="ball ball3">
+                        <p class="content-item__text">
+                            Способствует снижению
+                            болевых ощущений
+                        </p>
+                    </div>
+                    <div class="complex__content-item">
+                        <a href="#" class="content-item__link">
+                            Подробнее >
+                        </a>
+                        <img src="img/icons/ball.svg" class="ball ball4">
+                        <p class="content-item__text">
+                            Помогает
+                            уменьшить отеки
+                        </p>
+                    </div>
+                    <div class="complex__content-item">
+                        <a href="#" class="content-item__link">
+                            Подробнее >
+                        </a>
+                        <img src="img/icons/ball.svg" class="ball ball5">
+                        <p class="content-item__text">
+                            Оказывает ангиопротекторное
+                            и венотонизурующее действие
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="production">
+        <div class="container">
+            <div class="production__wrapper">
+                <h2 class="production__heading headingH2">
+                    О производстве Венарус
+                </h2>
+                <div class="swiper productionSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="video">
+                                <img src="img/video2.png" alt="Видео">
+                                <img src="img/icons/play.svg" class="videoPlay-icon">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="video">
+                                <img src="img/video1.png" alt="Видео">
+                                <img src="img/icons/play.svg" class="videoPlay-icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        const swiper1 = new Swiper('.swiper', {
             // Optional parameters
             direction: 'horizontal',
             loop: true,
@@ -89,6 +225,24 @@
             }
         });
     </script>
+    <script>
+        var swiper = new Swiper(".productionSwiper", {
+          slidesPerView: 2,
+          spaceBetween: 0,
+          slidesPerGroup: 2,
+          loop: false,
+          loopFillGroupWithBlank: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
