@@ -35,11 +35,11 @@
                     </button>
                 </div>
             </nav>
+            <div class="ocean">
+                <div class="wave"></div>
+                <div class="wave wave2"></div>
+            </div>
             <div class="header__wrapper">
-                <!-- <div class="ocean">
-                    <div class="wave"></div>
-                    <div class="wave"></div>
-                </div> -->
                 <div class="header__wrapper-content">
                     <h1 class="header__heading headingH1">
                         НАДЕЖНЫЙ ПОМОЩНИК
@@ -183,7 +183,7 @@
                         <a href="#" class="content-item__link">
                             Подробнее >
                         </a>
-                        <img src="img/icons/ball.svg" class="ball ball1">
+                        <img src="img/balls/Star.svg" class="ball ball1">
                         <p class="content-item__text">
                             Помогает
                             предотвратить судороги
@@ -193,7 +193,7 @@
                         <a href="#" class="content-item__link">
                             Подробнее >
                         </a>
-                        <img src="img/icons/ball.svg" class="ball ball2">
+                        <img src="img/balls/line.svg" class="ball ball2">
                         <p class="content-item__text">
                             Способствует
                             снижению тяжести
@@ -204,7 +204,7 @@
                         <a href="#" class="content-item__link">
                             Подробнее >
                         </a>
-                        <img src="img/icons/ball.svg" class="ball ball3">
+                        <img src="img/balls/point.svg" class="ball ball3">
                         <p class="content-item__text">
                             Способствует снижению
                             болевых ощущений
@@ -214,7 +214,7 @@
                         <a href="#" class="content-item__link">
                             Подробнее >
                         </a>
-                        <img src="img/icons/ball.svg" class="ball ball4">
+                        <img src="img/balls/line2.svg" class="ball ball4">
                         <p class="content-item__text">
                             Помогает
                             уменьшить отеки
@@ -224,7 +224,7 @@
                         <a href="#" class="content-item__link">
                             Подробнее >
                         </a>
-                        <img src="img/icons/ball.svg" class="ball ball5">
+                        <img src="img/balls/arrow.svg" class="ball ball5">
                         <p class="content-item__text">
                             Оказывает ангиопротекторное
                             и венотонизурующее действие
@@ -234,6 +234,13 @@
             </div>
         </div>
     </section>
+
+
+
+
+
+
+
     <section class="production">
         <div class="container">
             <div class="production__wrapper">
@@ -255,12 +262,44 @@
                             </div>
                         </div>
                     </div>
-                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next arrow production__next-arrow">
+                        <img src="img/icons/arrowNext.svg" alt="Следующий">
+                    </div>
+                    <div class="swiper-button-prev arrow production__prev-arrow">
+                        <img src="img/icons/arrowPrev.svg" alt="Предыдущий">
+                    </div>
+                    <button class="btn production__btn">
+                        Подробнее >
+                    </button>
                 </div>
             </div>
 
         </div>
     </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <section class="opinions">
         <div class="container">
             <div class="opinions__wrapper">
@@ -300,7 +339,7 @@
                     <h2 class="complex__textContent-heading headingH2">
                         Полезная информация
                     </h2>
-                    <p class="complex__textContent-descr descr">
+                    <p class="complex__textContent-descr info__textContent-descr descr">
                         ВЕНАРУС —
                         надежный помощник в лечении варикоза, хранительно женсеих ног на пути к ее мечте!
                     </p>
@@ -429,15 +468,11 @@
     </script>
     <script>
         var swiper2 = new Swiper1(".productionSwiper", {
-            slidesPerView: 2,
+            slidesPerView: 3,
             spaceBetween: 0,
             slidesPerGroup: 2,
             loop: false,
             loopFillGroupWithBlank: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
