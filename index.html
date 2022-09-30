@@ -18,8 +18,8 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="header__nav">
+        <div class="container header__container">
+            <nav class="header__nav header__navO">
                 <div class="header__nav-logo">
                     <img src="img/logo.svg" alt="Венарус">
                 </div>
@@ -30,12 +30,16 @@
                     <button class="nav-list__item">
                         <img src="img/icons/map.svg" alt="Местоположение" class="nav-list__item-icon">
                     </button>
-                    <button class="nav-list__item">
+                    <button class="nav-list__item" id="burgerO">
                         <img src="img/icons/menu.svg" alt="Меню" class="nav-list__item-icon">
                     </button>
                 </div>
             </nav>
             <div class="header__wrapper">
+                <!-- <div class="ocean">
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                </div> -->
                 <div class="header__wrapper-content">
                     <h1 class="header__heading headingH1">
                         НАДЕЖНЫЙ ПОМОЩНИК
@@ -78,11 +82,54 @@
                     </button>
                 </div>
             </div>
+
+
+
+
+            <div class="header__menu">
+                <nav class="header__nav header__navC">
+                    <div class="header__nav-logo">
+                        <img src="img/logo.svg" alt="Венарус">
+                    </div>
+                    <button class="nav-list__item burger" id="burgerC">
+                        <img src="img/icons/menuC.svg" alt="Меню" class="nav-list__item-icon">
+                    </button>
+                </nav>
+                <div class="header__menu-list">
+                    <a href="#" class="menu__list-item">
+                        Где купить
+                    </a>
+                    <a href="#" class="menu__list-item">
+                        О препарате
+                    </a>
+                    <a href="#" class="menu__list-item">
+                        О варикозе
+                    </a>
+                    <a href="#" class="menu__list-item">
+                        Решение
+                    </a>
+                    <a href="#" class="menu__list-item">
+                        Специалистам
+                    </a>
+                    <a href="#" class="menu__list-item">
+                        Геморрой
+                    </a>
+                </div>
+            </div>
+
+
+
+
+
         </div>
     </header>
     <section class="trigger">
         <div class="trigger__line">
-            получить скидку 10% >>>
+            <marquee class="trigger__line-text" scrolldelay="0" scrollamount="12">
+                получить скидку 10% >>>
+                получить скидку 10% >>>
+                получить скидку 10% >>>
+            </marquee>
         </div>
         <div class="container">
             <div class="trigger__wrapper">
@@ -322,29 +369,46 @@
     </section>
     <footer class="footer">
         <div class="container">
-            <div class="container">
-                <h2 class="footer__heading">
-                    БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА. НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ
-                </h2>
-                <div class="footer__wrapper">
-                    <div class="footer__item">
-                        <a href="#" class="footer__item-link">
-                            Сообщить о нежелательном явлении
+            <h2 class="footer__heading">
+                БИОЛОГИЧЕСКИ АКТИВНАЯ ДОБАВКА. НЕ ЯВЛЯЕТСЯ ЛЕКАРСТВОМ
+            </h2>
+            <div class="footer__wrapper">
+                <div class="footer__item">
+                    <a href="#" class="footer__item-link">
+                        Сообщить о нежелательном явлении
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <a href="#" class="footer__item-link">
+                        Условия пользования сайтом и файлами Cookies
+                    </a>
+                    <a href="#" class="footer__item-link footer-link">
+                        г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж
+                        Телефон: +7 (495) 555-55-55
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__item-socialGroup">
+                        <a href="#" class="socialGroup__item">
+                            <img src="img/social/vk.svg" alt="Вконтакте" class="social-icon">
+                        </a>
+                        <a href="#" class="socialGroup__item">
+                            <img src="img/social/facebook.svg" alt="Фейсбук" class="social-icon">
+                        </a>
+                        <a href="#" class="socialGroup__item">
+                            <img src="img/social/twitter.svg" alt="Твиттер" class="social-icon">
+                        </a>
+                        <a href="#" class="socialGroup__item">
+                            <img src="img/social/ok.svg" alt="Одноклассники" class="social-icon">
                         </a>
                     </div>
-                    <div class="footer__item">
-                        <a href="#" class="footer__item-link">
-                            Условия пользования сайтом и файлами Cookies
+                    <div class="footer__item-descr">
+                        <a href="#">
+                            <img src="img/logoStudio.svg" alt="Фарм студия">
                         </a>
-                        <a href="#" class="footer__item-link footer-link">
-                            г. Москва, ул. Шаболовка, д. 31, стр. 11, 4 этаж
-                            Телефон: +7 (495) 555-55-55
-                        </a>
-                    </div>
-                    <div class="footer__item">
-                        <div class="footer__item-socialGroup">
-                            
-                        </div>
+                        <p class="footer__item-descr-text">
+                            Создание сайтов Фарм-студия №1 в Рунете
+                        </p>
                     </div>
                 </div>
             </div>
