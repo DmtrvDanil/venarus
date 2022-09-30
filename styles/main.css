@@ -1,5 +1,9 @@
 * {
     box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+html {
+    overflow-x: hidden;
 }
 h1, h2, h3, a, p {
     margin: 0;
@@ -19,6 +23,7 @@ body {
     max-width: 1140px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
 }
 .headingH1 {
     font-size: 50px;
@@ -514,4 +519,211 @@ body {
 }
 .menu__list-item:not(:last-child) {
     margin-bottom: 54px;
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+        padding-bottom: 100px;
+    }
+    .container {
+        max-width: 900px;
+    }
+    .headingH1 {
+        font-size: 40px;
+    }
+    .complex__content-item {
+        max-width: 700px;
+    }
+    .content-item__link {
+        font-size: 14px;
+    }
+    .content-item__text {
+        font-size: 18px;
+        margin-left: 29px;
+        max-width: 280px;
+    }
+    .btn {
+        padding: 15px 60px;
+        font-size: 14px;
+    }
+    .where__content img{
+        max-width: 600px;
+    }
+    .ball {
+        width: 100px;
+    }
+    .ball1 {
+        left: 25px;
+    }
+    .ball2 {
+        right: 0;
+        bottom: 25px;
+    }
+    .ball3 {
+        left: 51px;
+        top: -21px;
+    }
+    .ball4 {
+        right: 42px;
+        bottom: -21px;
+    }
+    .ball5 {
+        left: 25px;
+        top: -10px;
+    }
+    .header__wrapper-slider {
+        padding-bottom: 150px;
+    }
+    .arrow img {
+        width: 30px;
+    }
+    .header__content-action {
+        margin-top: 80px;
+    }
+    .headingH2 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 750px) {
+    .header__wrapper-slider {
+        padding-bottom: 100px;
+    }
+    .arrow {
+        top: 70%;
+    }
+    .ball {
+        width: 70px;
+    }
+    .ball2 {
+        right: 20px;
+    }
+    .action__item-icon {
+        width: 40px;
+    }
+    .trigger__item-text {
+        font-size: 14px;
+    }
+    .production {
+        padding-top: 150px;
+    }
+    .opinions {
+        margin-top: 150px;
+    }
+    .complex__content-item {
+        padding-right: 40px;
+    }
+    .content-item__text, .descr, .info__content-item-text {
+        font-size: 14px;
+    }
+    .info__content-item {
+        padding: 12px 12px;
+    }
+    .textContent {
+        max-width: 170px;
+    }
+    .where__btn:not(:last-child)  {
+        margin-right: 15px;
+    }
+    .where-img img {
+        width: 400px;
+    }
+    .where__btn {
+        padding: 15px 30px;
+    }
+    .footer__item-descr-text {
+        font-size: 14px;
+    }
+}
+@media (max-width: 749px) {
+    .btn {
+        padding: 11px 26px 7px;
+    }
+    .header__nav-logo img {
+        width: 135px;
+    }
+    .nav-list__item-icon {
+        width: 24px;
+    }
+    .nav-list__item:not(:last-child) {
+        margin-right: 9px;
+    }
+    .header__wrapper, .production__wrapper, .opinions__wrapper, .info__wrapper, .where__wrapper, .footer__wrapper, .trigger__wrapper {
+        margin-top: 30px;
+        flex-direction: column;
+    }
+    .header__content-action {
+        display: none;
+    }
+    .headingH1 {
+        font-size: 47px;
+    }
+    .header__slide {
+        content: url("../img/solo.png");
+    }
+    .header {
+        background: gray;
+        padding: 16px 0 21px;
+    }
+    .header__wrapper-slider {
+        padding-bottom: 140px;
+    }
+    .header__btn {
+        margin-left: -77px;
+    }
+    .swiper-button-next {
+        margin-right: -35px;
+    }
+    .swiper-button-prev {
+        margin-left: -35px;
+    }
+    .header__wrapper-slider {
+        padding-bottom: 100px;
+    }
+    .arrow {
+        top: 80%;
+    }
+    .trigger__wrapper, .complex, .production, .opinions, .info, .where, .footer {
+        margin-top: 30px;
+    }
+    .complex__wrapper {
+        flex-direction: column;
+    }
+    .textContent {
+        max-width: initial;
+        width: 100%;
+    }
+    .descr {
+        margin-top: 20px;
+    }
+    .complex__content {
+        margin: 15px 0 0;
+    }
+    .complex__content-item {
+        padding-right: 0;
+    }
+    .content-item__link {
+        font-size: 12px;
+    }
+    .info__btn  {
+        margin-top: 15px;
+    }
+    .where-img img {
+        width: 350px;
+    }
+    .where__content-btnGroup {
+        margin-top: 15px;
+    }
+    .footer__heading {
+        font-size: 20px;
+    }
+    .footer__wrapper {
+        margin-top: 15px;
+    }
+    .footer__item:not(:last-child) {
+        margin-bottom: 10px;
+    }
+    .content-action__item:not(:last-child)  {
+        margin-bottom: 10px !important;
+    }
 }
