@@ -245,7 +245,11 @@ body {
 .where__content-btnGroup button {
     transition: .3s ease;
 }
-.where__content-btnGroup button:hover{
+.info__btn:hover {
+    background: #590D56;
+    color: #fff;
+}
+.where__content-btnGroup button:hover {
     background: #590D56;
     color: #fff;
 }
@@ -316,6 +320,8 @@ body {
 .content-item__link {
     align-self: flex-end;
     font-size: 18px;
+    max-width: 150px;
+    width: 100%;
 }
 .content-item__text {
     align-self: center;
@@ -393,6 +399,38 @@ body {
 .production__btn:hover {
     color: rgba(255, 255, 255, 0.7);
     border-color: rgba(255, 255, 255, 0.7);
+}
+.production__popup {
+    position: absolute;
+    top: 10%;
+    right: 25%;
+    border: 1px solid #590D56;
+    background: #fff;
+    z-index: 30;
+    padding: 40px 15px 20px;
+    border-radius: 20px;
+    opacity: 0;
+    transition: opacity .5s linear; 
+    visibility: .5s linear;
+}
+.show {
+    opacity: 1;
+    visibility: visible;
+}
+.productionSwiper {
+    padding-right: 100px;
+}
+.productionSwiper .swiper-button-prev,  .productionSwiper .swiper-button-next {
+    margin: 0 !important;
+    left: 90%;
+}  
+.production__popup-closeBtn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
 .opinions {
     margin-top: 212px;
@@ -782,5 +820,12 @@ body {
     }
     .content-action__item:not(:last-child)  {
         margin-bottom: 10px !important;
+    }
+    .production__popup {
+        padding: 10px;
+    }
+    .videoPlay-icon {
+        width: 30px !important;
+        height: 30px !important;
     }
 }

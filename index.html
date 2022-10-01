@@ -251,13 +251,13 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="video">
-                                <img src="img/video2.png" alt="Видео">
+                                <img src="img/video1.png" alt="Видео">
                                 <img src="img/icons/play.svg" class="videoPlay-icon">
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="video">
-                                <img src="img/video1.png" alt="Видео">
+                                <img src="img/video2.png" alt="Видео">
                                 <img src="img/icons/play.svg" class="videoPlay-icon">
                             </div>
                         </div>
@@ -271,35 +271,19 @@
                     <button class="btn production__btn">
                         Подробнее >
                     </button>
+                    <div class="production__popup">
+                        <button class="production__popup-closeBtn">
+                            <img src="img/close.svg">
+                        </button>
+                        <p class="production__popup-text">
+                            Видео нашего производства
+                        </p>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <section class="opinions">
         <div class="container">
             <div class="opinions__wrapper">
@@ -456,19 +440,14 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script>
         const swiper1 = new Swiper('.swiper', {
-            // Optional parameters
             direction: 'horizontal',
-            // loop: true,
-            // Navigation arrows
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
-            }
+            },
         });
-    </script>
-    <script>
-        var swiper2 = new Swiper1(".productionSwiper", {
-            slidesPerView: 3,
+        var swiper2 = new Swiper(".productionSwiper", {
+            slidesPerView: 2,
             spaceBetween: 0,
             slidesPerGroup: 2,
             loop: false,
@@ -478,10 +457,12 @@
                 prevEl: ".swiper-button-prev",
             },
         });
-    </script>
-    <script>
         let swiper3 = new Swiper(".opinionsSwiper", {
             loop: false,
+            autoplay: {
+          delay: 2000,
+          disableOnInteraction: false,
+        },
             pagination: {
                 el: ".swiper-pagination1",
                 clickable: true,
